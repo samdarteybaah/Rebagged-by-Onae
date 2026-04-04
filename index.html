@@ -39,6 +39,9 @@
             height: 100vh;
             overflow: hidden;    
         }
+        .hero-img{
+            height:100%
+        }
 
         .hero-img img {
             width: 100%;
@@ -51,9 +54,10 @@
             font-weight: 500;
             position: absolute;
             top: 50%;
-            left: 70%; /* Moves text to the right side */
+            left: 65%; /* Moves text to the right side */
             transform: translate(-50%, -50%);
             z-index: 2;
+            max-width:500px;
             text-align: left;
 
             /* Animation default */
@@ -189,23 +193,23 @@
         }
 
         .hero{
-            height: 50vh;
+            height: 60vh;
         }
 
         .hero-overlay {
             top: 50%;
-            left: 70%;
+            left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
             padding: 0 15px;
         }
 
         .hero-overlay h1 {
-            font-size: 22px;
+            font-size: 24px;
+            line-height: 1.3;
         }
 
         .hero-overlay p {
-            font-size: 14px;
             display: none;
         }
 
@@ -264,8 +268,8 @@
     <section id="product-img">
         <h2 class="section-title">What Sustainable Fashion Can Be</h2>
         <div class="img-section">
-            <img src="images\picA.jpg" alt="">
             <img src="images\picC.jpg" alt="">
+            <img src="images\picA.jpg" alt="">
             <img src="images\picB.jpg" alt="">
             <img src="images\picD.jpg" alt="">
             <img src="images\pic1.jpg" alt="">
