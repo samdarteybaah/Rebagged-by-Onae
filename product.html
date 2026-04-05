@@ -72,6 +72,27 @@
             padding: 20px;
         }
 
+        #product-img {
+            background-color: #EEE5D4;
+            width: 100%;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .img-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 15px;
+            padding: 0 20px;
+        }
+
+        .img-section img {
+            width: 100%;
+            height: 280px;       
+            object-fit: cover;   
+            border-radius: 8px;
+        }
+
 
         section { padding: 60px 80px; }
 
@@ -156,9 +177,17 @@
         }
 
         /* Very Small Screens */
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             .section-title {
                 font-size: 18px;
+            }
+
+            .img-section {
+            grid-template-columns: 1fr;
+            }
+
+            .img-section img {
+                height: 250px;
             }
 
             .content-block {
@@ -212,7 +241,19 @@
             driving positive change in Africa. Choose ReBagged by Onaé and make a lasting impact with every purchase.
 
         </p>
-
+    </section>
+    <section id="product-img">
+        <h2 class="section-title">Our Product In World</h2>
+        <div class="img-section">
+            <img src="images\Rebagged-1.jpg" alt="">
+            <img src="images\Rebagged-2.jpg" alt="">
+            <img src="images\Rebagged-3.jpg" alt="">
+            <img src="images\Rebagged-4.jpg" alt="">
+            <img src="images\Rebagged-5.jpg" alt="">
+            <img src="images\Rebagged-6.jpg" alt="">
+            <img src="images\Rebagged-7.jpg" alt="">
+            <img src="images\Rebagged-8.jpg" alt="">
+        </div>
     </section>
 </body>
 </html>
